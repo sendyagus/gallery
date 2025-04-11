@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* chatbot */
+  .chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  /* Ikon Chatbot */
+  .chatbot-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f2a6b3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .chatbot-icon i {
+    font-size: 28px;
+    color: white;
+  }
+  
+  /* Kotak Chat */
+  .chatbox {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 320px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    flex-direction: column;
+  }
+  
+  /* Fullscreen Mode di Mobile */
+  @media screen and (max-width: 768px) {
+    .chatbox {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      border-radius: 0;
+    }
+  
+  }
+  
+  /* Header Chat */
+  .chat-header {
+    background: #f2a6b3;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Body Chat */
+  .chat-body {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fff5f5;
+  }
+  
+  /* Fullscreen Chat Body di Mobile */
+  @media screen and (max-width: 768px) {
+    .chat-body {
+      max-height: calc(100% - 120px);
+    }
+  }
+  
+  /* Footer Chat */
+  .chat-footer {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+    background: white;
+  }
+  
+  .chat-footer input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  .chat-footer button {
+    background: #f2a6b3;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Style Pesan */
+  .message {
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  
+  .user-message {
+    background: #f2a6b3;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .bot-message {
+    background: #ddd;
+    align-self: flex-start;
+  }
+  
+  .hero,
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    transition: background 0.3s;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
+  .navbar.scrolled {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #f2a6b3;
+  }
+  .hero {
+    min-height:800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fbdddd;
+    text-align: center;
+  }
+  /* .hero h1 {
+    font-family: "Pacifico", cursive;
+    color: black;
+    font-size: 3rem;
+  } */
+
+  .hero h1{
+    align-self: center;   
+       font-family: "Pacifico", cursive;
+       font-weight: 400;
+       font-style: normal;
+       margin-top: 40%;
+       font-size: 55px;
+     
+   }
+  .hero p {
+    max-width: 600px;
+    color: black;
+  }
+  
+  .container {
+    font-weight: bold;
+  }
+  
+  .title-text {
+    font-family: "Pacifico", cursive;
+    color: black;
+    font-size: 3rem;
+  }
+  
+  /* Container Kupu-kupu */
+  .butterfly-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Agar kupu-kupu tidak bisa diklik */
+  }
+  
+  /* Style untuk Kupu-kupu */
+  .butterfly {
+    position: absolute;
+    width: 50px; /* Ukuran kupu-kupu */
+    opacity: 0.5;
+    animation: flyUpDown 4s infinite ease-in-out alternate,
+      flySideways 6s infinite ease-in-out alternate;
+  }
+  
+  /* Posisi awal kupu-kupu */
+  .butterfly-1 {
+    top: 20%;
+    left: 10%;
+  }
+  .butterfly-2 {
+    top: 50%;
+    left: 40%;
+  }
+  .butterfly-3 {
+    top: 70%;
+    left: 80%;
+  }
+  
+  /* Animasi naik-turun */
+  @keyframes flyUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Animasi ke kiri-kanan */
+  @keyframes flySideways {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(30px);
+    }
+  }
+  
+  /* section 2 */
+  /* Membuat card musik mirip Spotify */
+  .music-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+  }
+  
+  /* Styling untuk gambar di carousel */
+  .carousel-image {
+    width: 100%;
+    height: 200px; /* Sesuaikan tinggi gambar */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .music-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Styling untuk audio player */
+  .audio-container audio {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .fw-bold {
+    color: #ffffff;
+  }
+  
+  .fw-boldd {
+    color: #f2a6b3;
+  }
+  
+  .mark {
+    background-color: #f2a6b3;
+    border-radius: 5px;
+  }
+  
+  /* section 4 galeri */
+  .gallery-card {
+    border: 4px solid #fbdddd;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 350px;
+    height: 450px;
+  }
+  
+  .gallery-img {
+    width: 350px;
+    height: 350px; /* Pastikan semua gambar memiliki tinggi yang sama */
+    object-fit: cover; /* Memastikan gambar tetap rapi */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-card:hover {
+    transform: scale(0.95); /* Efek hover smooth */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  #galeri h1{
+      align-self: center;   
+         font-family: "Pacifico", cursive;
+         font-weight: 400;
+         font-style: normal;
+         color: white;
+         font-size: 55px;
+       
+     
+  }
+  
+  .card-body {
+    background-color: #fbdddd;
+  }
+
+ 

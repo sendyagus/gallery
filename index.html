@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReLove</title>
+    <link rel="icon" type="image/x-icon" href="img/iconlove.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer@latest"
+    ></script>
+    <link rel="stylesheet" href="css/stylee.css" />
+    <style>
+      body {
+        overflow-x: hidden; /* Menghindari scroll horizontal */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+      <div class="container fw-bold fs-5 ">
+        <a class="navbar-brand " href="#">ReLove</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#musik">Musik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#qoute">Relove Qoute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeri">Galeri Foto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+   
+    <!-- chatbot -->
+    <div class="chatbot-container">
+      <div class="chatbot-icon" onclick="toggleChat()">
+        <i class="fas fa-comments"></i>
+      </div>
+      <div class="chatbox">
+        <div class="chat-header">Chatbot</div>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-footer">
+          <input type="text" id="chat-input" placeholder="Ketik pesan..." />
+          <button onclick="sendMessage()">Kirim</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 1 Hero-->
+    <section class="hero">
+      <!-- animasi -->
+      <div class="butterfly-container">
+        <img src="img/butterfly.png" class="butterfly butterfly-1" />
+
+        <img src="img/butterfly.png" class="butterfly butterfly-3" />
+      </div>
+
+      <div class="container text-center">
+        <div class="row align-items-center">
+
+        
+        <div class="col-6 mx-auto align-self-center">
+
+          <h1 class="mb-3">Hai Cantikku Winda Dwi Agustin</h1>
+          <p class="fw-semibold text-sm-center mx-3 text-dark">
+            "Sayang, setiap hari bersamamu adalah anugerah terindah yang pernah aku
+            miliki. Senyummu adalah cahaya yang menerangi hariku, dan suaramu adalah
+            melodi yang selalu ingin kudengar. Aku bersyukur memiliki seseorang
+            sebaik dan setulus dirimu di sisiku. Kamu bukan hanya bahagiaku, tapi
+            juga rumah tempat hatiku selalu ingin pulang. Aku mencintaimu, hari ini,
+            esok, dan selamanya."
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#fbdddd"
+        fill-opacity="1"
+        d="M0,64L26.7,85.3C53.3,107,107,149,160,160C213.3,171,267,149,320,165.3C373.3,181,427,235,480,234.7C533.3,235,587,181,640,160C693.3,139,747,149,800,160C853.3,171,907,181,960,176C1013.3,171,1067,149,1120,144C1173.3,139,1227,149,1280,154.7C1333.3,160,1387,160,1413,160L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+      ></path>
+    </svg>
+
+    <!-- section 2 Music-->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style="margin-top: -30%"
+    >
+      <path
+        fill="#f2a6b3"
+        fill-opacity="1"
+        d="M0,64L26.7,85.3C53.3,107,107,149,160,160C213.3,171,267,149,320,165.3C373.3,181,427,235,480,234.7C533.3,235,587,181,640,160C693.3,139,747,149,800,160C853.3,171,907,181,960,176C1013.3,171,1067,149,1120,144C1173.3,139,1227,149,1280,154.7C1333.3,160,1387,160,1413,160L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+      ></path>
+    </svg>
+    <section
+    id="musik"
+    class="container-fluid"
+    style="background-color: #f2a6b3; margin-top: -10%">
+    <div class="row">
+
+  
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="title-text text-white mb-3 mx-3">Give Me Your Forever</h1>
+        <p class="text-sm-start fw-semibold mx-3">
+          Lagu "Give Me Your Forever" dari Zack Tabudlo bermakna tentang
+          <span class="fw-bold text-white">komitmen </span> cinta seumur hidup, kesetiaan
+          tanpa batas, dan pengorbanan dalam hubungan. Lagu ini menceritakan
+          tentang keinginan untuk membangun hubungan yang tak terpisahkan, di
+          mana kedua pasangan <span class="fw-bold text-white">berkomitmen</span> untuk
+          selalu bersama hingga akhir.
+        </p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <div class="music-card p-3">
+          <!-- Carousel -->
+
+          
+          <div class="card mx-auto">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/ultah.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/konseran.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/lebaran1.webp" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+               
+              </div>
+            <div class="card-body">
+
+          <!-- Audio Player -->
+         
+            <audio controls autoplay    >
+              <source src="music/give me.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+</div>
+</div>
+  </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#f2a6b3"
+        fill-opacity="1"
+        d="M0,288L30,288C60,288,120,288,180,256C240,224,300,160,360,149.3C420,139,480,181,540,165.3C600,149,660,75,720,90.7C780,107,840,213,900,261.3C960,309,1020,299,1080,272C1140,245,1200,203,1260,202.7C1320,203,1380,245,1410,266.7L1440,288L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+      ></path>
+    </svg>
+
+    <!-- section 3 Qoute -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style="margin-top: -28%"
+    >
+      <path
+        fill=" #fdddde"
+        fill-opacity="1"
+        d="M0,288L30,288C60,288,120,288,180,256C240,224,300,160,360,149.3C420,139,480,181,540,165.3C600,149,660,75,720,90.7C780,107,840,213,900,261.3C960,309,1020,299,1080,272C1140,245,1200,203,1260,202.7C1320,203,1380,245,1410,266.7L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+      ></path>
+    </svg>
+    <section
+      id="qoute"
+      class="container-fluid py-5"
+      style="background-color: #fbdddd; margin-top: -10%"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Kolom Kiri - 3D Model -->
+          <div class="col-md-6 text-center">
+            <model-viewer src="model/HEART.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls   auto-rotate
+            tone-mapping="neutral" shadow-intensity="1" exposure="1.26" style="width: 100%; height: 400px"
+               >
+                 <div class="progress-bar hide" slot="progress-bar">
+                     <div class="update-bar"></div>
+                 </div>
+                 <button slot="ar-button" id="ar-button">
+                     View in your space
+                 </button>
+               
+             </model-viewer>
+          </div>
+
+          <!-- Kolom Kanan - Kalimat -->
+          <div class="col-md-6">
+            <h1 class="title-text text-dark mb-3">Relove</h1>
+            <p class="text-sm-start fw-normal">
+              "Dulu, kita pernah berjalan beriringan, membangun mimpi bersama,
+              lalu terpisah oleh keadaan. Waktu dan jarak sempat membuat kita
+              menjadi asing, tetapi takdir punya cara sendiri untuk
+              <span class="fw-bolder mark" style="background-color: #f2a6b3;">mempertemukan kembali</span> dua hati
+              yang masih saling mencari. Saat aku menatap matamu lagi setelah
+              sekian lama, aku tahu, perasaan itu tak pernah benar-benar pergi.
+              Semua kenangan indah yang dulu kita ukir masih tersimpan rapi di
+              sudut hati, menunggu untuk
+              <span class="fw-bolder mark">dilanjutkan</span> . Kini, kita
+              diberikan kesempatan kedua, bukan untuk mengulang masa lalu,
+              tetapi untuk
+              <span class="fw-bolder mark">menciptakan kisah</span> yang lebih
+              indah, lebih dewasa, dan lebih kuat dari sebelumnya. Aku percaya,
+              cinta sejati bukan tentang siapa yang datang lebih dulu, tetapi
+              tentang siapa yang
+              <span class="fw-bolder mark">tetap tinggal</span> meskipun badai
+              pernah menerpa. Aku memilihmu lagi, bukan karena aku tak bisa
+              melupakanmu, tetapi karena hatiku tahu, kamu adalah rumah yang
+              selalu <span class="fw-bolder mark">ingin aku tuju</span> . Terima
+              kasih telah kembali, terima kasih telah memilih aku sekali lagi.
+              Mari kita jalani cerita ini dengan
+              <span class="fw-bolder mark">lebih banyak cinta</span> ,
+              <span class="fw-bolder mark"> lebih banyak pengertian</span>, dan
+              <span class="fw-bolder mark">lebih banyak kebahagiaan</span>.
+              Karena kali ini, aku ingin mencintaimu dengan cara yang
+              <span class="fw-bolder mark">lebih baik</span> ,
+              <span class="fw-bolder mark">lebih dalam</span>, dan
+              <span class="fw-bolder mark">lebih selamanya</span>"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill=" #fdddde"
+        fill-opacity="1"
+        d="M0,256L48,224C96,192,192,128,288,117.3C384,107,480,149,576,160C672,171,768,149,864,160C960,171,1056,213,1152,240C1248,267,1344,277,1392,282.7L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      ></path>
+    </svg>
+
+    <!-- section 4 Galeri -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style="margin-top: -30%"
+    >
+      <path
+        fill="#f2a6b3"
+        fill-opacity="1"
+        d="M0,256L48,224C96,192,192,128,288,117.3C384,107,480,149,576,160C672,171,768,149,864,160C960,171,1056,213,1152,240C1248,267,1344,277,1392,282.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+
+    <section
+      id="galeri"
+      class="container-fluid py-5"
+      style="background-color: #f2a6b3; margin-top: -10%"
+    >
+      <h2 class="title-text text-white text-center mb-4">Galeri Foto</h2>
+      <div class="row g-4 px-3">
+        <!-- Foto 1 -->
+        <div class="col-md-4 col-sm-6  " data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/first.webp" class="gallery-img" alt="Foto 1" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Selfie Pertama📸</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6  " data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/bukber.webp" class="gallery-img" alt="Foto 1" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Buka bersama💗</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/ultah.webp" class="gallery-img" alt="Foto 1" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Ulang Tahun💓</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 " data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/prasmuka.webp" class="gallery-img" alt="Foto 1" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pramukaan🤍</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/perpisahan.webp" class="gallery-img" alt="Foto 1" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Perpisahan Sekolah💕</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/lego.webp" class="gallery-img" alt="Foto 1" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Lego Date🖤</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/betmut.webp" class="gallery-img" alt="Foto 1" />
+            <div class="card-body text-center">
+              <h5 class="card-title">lagi betmut tapi lucuk >_<</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/joging.webp" class="gallery-img" alt="Foto 1" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Joging Jalan Pagi🏃‍♀️‍➡️</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/nonton.webp" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Nonton Film🎬</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/pensi.webp" class="gallery-img" alt="Foto 1" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pensi SMK🌷</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/pantai.webp" class="gallery-img" alt="Foto 1" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Beach Date🤍🏖️</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/zaman pkl.webp" class="gallery-img" alt="Foto 2" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Random Selfie📸</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/konseran.webp" class="gallery-img" alt="Foto 2" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Nonton Konser🕺💃</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/kondangan.webp" class="gallery-img" alt="Foto 2" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Kondangan 💖</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/lbr2.webp" class="gallery-img" alt="Foto 2" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Lebaran 2025🍀</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/modeyali.webp" class="gallery-img" alt="Foto 2" />
+            <div class="card-body text-center">
+              <h5 class="card-title">mode yali-yali ukhtea🧕</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/poto.webp" class="gallery-img" alt="Foto 2" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Mirror Selfie📸</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6"data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/rdm1.webp" class="gallery-img" alt="Foto 2" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Random pap📸</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card gallery-card mx-auto">
+            <img src="img/selvi.webp" class="gallery-img" alt="Foto 2" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Random Selfie📸💓</h5>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card mx-auto">
+            <img src="img/berdua (8).jpg" class="gallery-img" alt="Foto 2" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Dlas Date🎀</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card mx-auto">
+            <img src="img/berdua (11).jpg" class="gallery-img" alt="Foto 2" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Dlas Date🎀</h5>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card mx-auto">
+            <img src="img/galeri (3).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Cacan (Candid Cantik💞)</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card mx-auto">
+            <img src="img/galeri (4).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Ughh Cantiknaaa🖤</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (5).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Meleleh aku💘</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (6).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Kangen kah ?💝</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (7).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Ketemuann😍</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (8).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Ga LDR lagi🎊</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (9).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Senengnyoo💓</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (10).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Dag Dig Dug💥</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (11).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Cekrek📸</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (12).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Cisss📸</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (14).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Smelll😁</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (13).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Manis Amat Mbaa😊</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (15).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Strawberry Date🍓</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (16).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Strawberry Date🍓</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (17).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Manisnyaa ayanggg🤗</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (19).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Manis amat senyumnyaa😋</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (20).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Woahhh💦</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (21).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Tatapan kamuu lohh😳</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (26).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Menggoda bngt😳</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (27).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Susukuu hehe😋</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (28).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Amboi manisnyoo😘</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (29).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Cantik🤍</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (30).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo🧡</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (31).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo💛</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (32).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo💚</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (34).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo💙</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (35).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo💜</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (36).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo🤎</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (37).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo💌</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (38).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo💗</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (39).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo💟</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (40).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo💝</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (41).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo💓</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (42).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo😍</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (43).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo😘</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (44).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo🤗</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (45).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Self Photo🥰</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (46).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">🤗</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (47).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pisss✌</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card gallery-card">
+            <img src="img/galeri (48).jpg" class="gallery-img" alt="Foto 3" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Huhu LDR lagii😣</h5>
+            </div>
+          </div>
+        </div> -->
+        <h1 class="text-center">Coming Soon...</h1>
+      </div>
+    </section>
+    <!-- Tambahkan Three.js dan GLTFLoader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer@latest"
+    ></script>
+
+    <script>
+      // Inisialisasi Scene
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      const renderer = new THREE.WebGLRenderer({
+        alpha: true,
+      });
+
+      renderer.setSize(window.innerWidth, 400);
+      document.getElementById("3d-container").appendChild(renderer.domElement);
+
+      // Tambahkan Pencahayaan
+      const light = new THREE.AmbientLight(0xffffff, 1);
+      scene.add(light);
+
+      // Load Model GLTF (GLTFLoader perlu dimuat terlebih dahulu)
+      const loader = new THREE.GLTFLoader();
+
+      // Load Model 1
+      loader.load("model/scene.gltf", function (gltf) {
+        const model1 = gltf.scene;
+        model1.position.set(-1.5, -1, 0); // Geser ke kiri
+        model1.scale.set(1, 1, 1);
+        scene.add(model1);
+      });
+
+      // Load Model 2
+      loader.load("assets/love.gltf", function (gltf) {
+        const model2 = gltf.scene;
+        model2.position.set(1.5, -1, 0); // Geser ke kanan
+        model2.scale.set(1, 1, 1);
+        scene.add(model2);
+      });
+
+      camera.position.z = 3;
+
+      // Animasi Render
+      function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+      }
+      animate();
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modelViewer = document.getElementById("myModel");
+
+        modelViewer.addEventListener("load", function () {
+          const material = modelViewer.model.materials[0]; // Ambil material pertama
+          material.pbrMetallicRoughness.setBaseColorFactor([
+            243 / 255,
+            110 / 255,
+            130 / 255,
+            2,
+          ]); // Warna #fdcb6e
+        });
+      });
+    </script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          delay: 100,
+          duration: 3000,
+      });
+  </script>
+
+    <!-- script bot -->
+    <script src="js/chatbot.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.hero{
+    min-height: 800px;
+    background: #fbdddd;
+}
+.hero h1{
+ align-self: center;   
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 40%;
+    font-size: 55px;
+
+  
+}
+.hero p{
+    font-size: 18px;
+    color: black;
+
+}
+/* #musik .title-text{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+} */
+#musik .carousel {
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+}
+#musik img{
+    object-fit: cover;
+}
+#musik .card {
+        border-radius: 15px;
+    width: 400px;
+}
+#musik img{
+    width: 250px;
+    height: 200px;
+}
+#musik p{
+    font-size: 18px;
+}
+.title-text{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+}
+#qoute .mark{
+    background-color: #f2a6b3;
+    
+}
+
+#galeri .card {
+    border-radius: 15px;
+width: 350px;
+height: 450px;
+}
+#galeri img {
+    border-radius: 15px;
+width: 350px;
+height: 350px;
+padding: 20px;
+object-fit: cover;
+}
